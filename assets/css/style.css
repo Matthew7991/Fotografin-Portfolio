@@ -11,9 +11,9 @@
 :root {
     --font-default-regular: "Roboto Regular";
     --font-default-bold: "Roboto Bold";
-    --font-size-default: 18px;
-    --font-size-main: 22px;
-    --font-size-heading: 36px;
+    --font-size-default: 1.125rem;
+    --font-size-main: 1.375rem;
+    --font-size-heading: 2.25rem;
 
     --font-color-default: black;
     --font-color-main: #212529;
