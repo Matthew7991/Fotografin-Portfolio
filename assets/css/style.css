@@ -199,7 +199,7 @@ button {
 ================================================================
 */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 720px) {
     :root {
         --padding-page: 1rem;
     }
@@ -208,15 +208,11 @@ button {
         width: 100%;
     }
 
-    
-
     .galery_column article p {
         opacity: 1;
         position: initial;
         transform: unset;
     }
-
-    
 }
 
 @media screen and (max-width: 900px) {
