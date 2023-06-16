@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+:root {
+    --font-default-regular: "Roboto Regular";
+    --font-default-bold: "Roboto Bold";
+}
+
+/* Colors
+    #000000
+    #FFFFFF
+    #EBEAE9
+    #CCCCCC
+    #212529
+    #AFAFAF
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
