@@ -11,19 +11,57 @@
 :root {
     --font-default-regular: "Roboto Regular";
     --font-default-bold: "Roboto Bold";
-}
+    --font-size-default: 18px;
+    --font-size-main: 22px;
+    --font-size-heading: 36px;
 
-/* Colors
-    #000000
-    #FFFFFF
-    #EBEAE9
-    #CCCCCC
-    #212529
-    #AFAFAF
-*/
+    --font-color-default: black;
+    --font-color-main: #212529;
+
+    --color-background-main: #EBEAE9;
+    --color-background-footer: #AFAFAF;
+    --color-background-input: white;
+    --color-border-input: #CCCCCC;
+}
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: var(--font-default-regular);
+    font-size: var(--font-size-default);
+    background-color: var(--color-background-main);
+    color: var(--font-color-default);
+}
+
+main {
+    font-size: var(--font-size-main);
+    color: var(--font-color-main);
+}
+
+h2 {
+    font-family: var(--font-default-bold);
+    font-size: var(--font-size-heading);
+}
+
+footer {
+    background-color: var(--color-background-footer);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input, textarea {
+    display: block;
+    border: var(--color-border-input) 1px solid;
+    border-radius: 4px;
 }
