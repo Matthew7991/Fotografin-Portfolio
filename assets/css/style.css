@@ -22,6 +22,8 @@
     --color-background-footer: #AFAFAF;
     --color-background-input: white;
     --color-border-input: #CCCCCC;
+
+    --padding-page: 128px;
 }
 
 * {
@@ -40,7 +42,7 @@ body {
 main {
     font-size: var(--font-size-main);
     color: var(--font-color-main);
-    padding: 0 128px;
+    padding: 0 var(--padding-page);
 }
 
 h2 {
@@ -51,7 +53,7 @@ h2 {
 }
 
 footer {
-    padding: 128px;
+    padding: var(--padding-page);
     background-color: var(--color-background-footer);
 }
 
@@ -84,7 +86,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
-    padding: 0 128px;
+    padding: 0 var(--padding-page);
 }
 
 /* 
@@ -177,4 +179,53 @@ button {
     background-color: var(--color-background-main);
     font-size: var(--font-size-default);
     padding: 0.5em 0;
+}
+
+/* 
+================================================================
+                            Responsive
+================================================================
+*/
+
+@media screen and (max-width: 500px) {
+    :root {
+        --padding-page: 1rem;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    
+
+    .galery_column article p {
+        opacity: 1;
+        position: initial;
+        transform: unset;
+    }
+
+    
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --padding-page: 3rem;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .galery_column {
+        max-width: 100%;
+    }
+
+    footer > div {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer form {
+        width: 100%;
+    }
 }
