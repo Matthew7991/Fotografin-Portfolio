@@ -35,7 +35,7 @@ body {
     font-size: var(--font-size-default);
     background-color: var(--color-background-main);
     color: var(--font-color-default);
-    /* padding: 0 128px; */
+    padding: 0 128px;
 }
 
 main {
@@ -67,6 +67,8 @@ input, textarea {
     border-radius: 4px;
 }
 
+
+
 /* 
 ================================================================
                             Header
@@ -78,3 +80,45 @@ header {
     justify-content: space-between;
     margin-top: 32px;
 }
+
+/* 
+================================================================
+                            main
+================================================================
+*/
+
+.hero {
+    width: 66%;
+    margin-top: 64px;
+}
+
+.hero p {
+    margin-top: 32px;
+}
+
+.gallery {
+    margin-top: 64px;
+    display: flex;
+    gap: 16px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.galery_column {
+    max-width: 33%;
+}
+
+.galery_column article {
+    position: relative;
+}
+
+.galery_column article p {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
