@@ -35,6 +35,7 @@ body {
     font-size: var(--font-size-default);
     background-color: var(--color-background-main);
     color: var(--font-color-default);
+    /* padding: 0 128px; */
 }
 
 main {
@@ -64,4 +65,16 @@ input, textarea {
     display: block;
     border: var(--color-border-input) 1px solid;
     border-radius: 4px;
+}
+
+/* 
+================================================================
+                            Header
+================================================================
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
 }
